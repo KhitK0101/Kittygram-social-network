@@ -1,0 +1,5 @@
+IP: 84.201.179.250;
+name_taski: https://mynote2023test.ddns.net/;
+name_kittygram: https://kittygramorig.myvnc.com/;
+login: admin;
+password: ZaPAdvsg; 
