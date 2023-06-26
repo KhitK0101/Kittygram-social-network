@@ -1,5 +1,5 @@
  server {
-    server_name 84.201.179.250 mynote2023test.ddns.net;
+    server_name mynote2023test.ddns.net;
 
     location /api/ {
         proxy_pass http://127.0.0.1:8000;
@@ -38,7 +38,7 @@
 }
 
  server {
-    server_name 84.201.179.250 kittygramorig.myvnc.com;
+    server_name kittygramorig.myvnc.com;
 
     location /api/ {
         proxy_pass http://127.0.0.1:8080;
