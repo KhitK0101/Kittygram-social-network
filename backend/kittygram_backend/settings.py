@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -8,9 +9,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = os.getenv('DEBUG')
+DEBUG = os.getenv('DEBUG', 'False')
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(",")
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -99,7 +100,7 @@ STATIC_ROOT = BASE_DIR / 'static_backend'
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT =  'var/www/infra_sprint1/media'
+MEDIA_ROOT =  'var/www/infra_sprint1/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

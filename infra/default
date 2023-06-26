@@ -38,7 +38,6 @@
 }
 
  server {
-    client_body_max_size 100M;
     server_name 84.201.179.250 kittygramorig.myvnc.com;
 
     location /api/ {
@@ -82,6 +81,7 @@
 
 }
 
-http {
+http { 
+    client_body_max_size 10M;
     server_tokens off;
 }
