@@ -80,8 +80,3 @@
 
 
 }
-
-http { 
-    client_body_max_size 10M;
-    server_tokens off;
-}
